@@ -1,0 +1,9 @@
+<div class="container">
+    <h1 class="titulo">Adiciona Fila</h1>
+    <label for="nomeFilaInputText">Digite o nome da fila:</label>
+    <!-- //[(ngModel)] vincula elemento à variavel que fica classe ts -->
+    <input type="text" id="nomeFilaInputText" [(ngModel)]="nomeFila" placeholder="Digite o nome da fila" /><br />
+    
+    <button class="botao-adiciona-fila btn btn-primary" (click)="adicionaFila()">Adiciona Fila</button>
+    <button class="botao-voltar btn btn-outline-primary" (click)="voltar()">Voltar</button>
+</div>

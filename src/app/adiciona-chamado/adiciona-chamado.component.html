@@ -1,0 +1,11 @@
+<div class="container">
+    <h1 class="titulo">Adiciona Chamado</h1>
+    <!-- indica um formulário, formGroup vincula ao formGroup na classe -->
+    <form [formGroup]='chamadoForm' (ngSubmit)="onSubmit()">
+        <label for="DescricaoChamadoInputText">Qual seu problema: </label>
+        <input type="text" formControlName='descricaoChamado' class="form-control">
+        <button type="submit" [disabled]="!chamadoForm.valid" class="btn btn-primary" >Cadastrar</button>
+        <button class="botao-voltar btn btn-outline-primary" (click)="voltar()">Voltar</button>
+    </form>
+    
+</div>

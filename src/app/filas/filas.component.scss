@@ -1,0 +1,18 @@
+
+  .filas{
+    list-style-type: none;
+  }
+  .filas li{
+    cursor: pointer;
+    padding: .3em;
+    // max-width: 50%;
+    color:#fff;
+    background-color: #000;
+    margin-bottom:2px;
+    font-weight: bold;
+  }
+  .filas li:hover{
+    background-color: #00dd00;
+    color:#000;
+  }
+  

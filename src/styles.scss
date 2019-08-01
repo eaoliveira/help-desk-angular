@@ -1,0 +1,38 @@
+/* You can add global styles to this file, and also import other style files */
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+
+.container {
+  text-align: center;
+  max-width: 50%;
+}
+.titulo {
+  border-bottom: solid 1px;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+a{
+  text-decoration: none;
+  color:#fff;
+}
+button {
+  float: right;
+  padding: 0.5em;
+  background-color: #ee660c;
+  font-size: 1em;
+  font-weight: bold;
+  color: #fff;
+}
+table {
+  align-items: center;
+  align-self: center;
+  border-top: solid 1px;
+  border-bottom: solid 1px;
+}/*
+td {
+  padding: 5px;
+}
+tr:nth-child(odd){
+  background-color: #fff;
+}
+tr:nth-child(even){
+  background-color: #CCC;
+}*/

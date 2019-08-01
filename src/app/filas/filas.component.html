@@ -1,0 +1,14 @@
+<div class="container">
+    <h1 class="titulo">Filas</h1>
+    <ul class="filas">
+        <!-- <li  *ngFor="let fila of filasLista"  (click)="onSelectFila(fila)" id='fila{{fila.id}}'> -->
+        <li *ngFor="let fila of filasLista" id='fila{{fila.id}}'>
+            <!-- chama o vetor e pega o nome -->
+            <a routerLink='/chamado/{{fila.id}}'>{{fila.id}}- {{fila.nome}}</a>
+        </li>
+    </ul>
+    <button routerLink="/adicionafila" class="btn btn-primary">Adicionar Fila</button>
+</div>
+<!-- //o colchete [fila acessa a proprietadade anotada com input no chamado components -->
+<!-- ngIf verifica se filaSelecionada existe -->
+<!-- <app-chamado *ngIf="filaSelecionada" [fila]="filaSelecionada"></app-chamado> -->

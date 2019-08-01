@@ -1,0 +1,26 @@
+<div class="container">
+<h1>Chamados de {{filaAtual.nome}}</h1>
+<table class="table table-dark">
+    <thead>
+        <td>#</td>
+        <td>Descrição</td>
+        <td>Status</td>
+        <td>Data de Abertura</td>
+        <td>Data de Fechamento</td>
+        <td>Descrição Finalização</td>
+    </thead>
+    <tr *ngFor="let chamado of chamados">
+        <td>{{chamado.id}}</td>
+        <td>{{chamado.descricao}}</td>
+        <td>{{chamado.status}}</td>
+        <!-- //datepipe _> faz formatação do valor -->
+        <td>{{chamado.dataAbertura | date: 'dd/MM/yyyy'}}</td>
+        <td>{{chamado.dataFechamento | date: 'dd/MM/yyyy'}}</td>
+        <td>{{chamado.descricaoFinalizacao}}</td>
+    </tr>
+</table>
+<button routerLink="adicionaChamado" class="botao-adicionachamado btn btn-primary">
+    Adicionar chamado</button>
+    
+<button (click)='voltar()' class="botao-voltar btn btn-outline-primary">Voltar</button>
+</div>
